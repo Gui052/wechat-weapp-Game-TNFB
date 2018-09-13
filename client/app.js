@@ -24,22 +24,10 @@ App({
   },
   doLogin() { //登录
     let that = this
-    util.showBusy('正在登录');
-    qcloud.login({
-      success(result) {//此处的result竟然不包含openid,所以res取缓存中的数据
-        util.showSuccess('登录成功')
-        let res = wx.getStorageSync('user_info_F2C224D4-2BCE-4C64-AF9F-A6D872000D1A');
-        if (that.userInfoReadyCallback) {
-          that.userInfoReadyCallback(res)
-        }
-      },
-      fail(error) {
-        util.showModel('登录失败', error);
-      }
-    });
   },
   pageGetUserInfo(page, openIdReadyCallback) { //在page中获取用户信息
-    const userInfo = wx.getStorageSync('user_info_F2C224D4-2BCE-4C64-AF9F-A6D872000D1A')
+    let userInfo = wx.getStorageSync('user_info_F2C224D4-2BCE-4C64-AF9F-A6D872000D1A')
+    userInfo = JSON.parse(userInfo);
     if (userInfo) {
       page.setData({
         userInfo,

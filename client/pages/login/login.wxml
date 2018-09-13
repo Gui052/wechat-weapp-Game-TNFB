@@ -1,0 +1,4 @@
+<!--pages/login/login.wxml-->
+<button open-type="getUserInfo" type="primary" class="to-login" bindgetuserinfo="onGotUserInfo">
+  进入游戏
+</button>

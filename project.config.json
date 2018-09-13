@@ -4,14 +4,14 @@
 	"miniprogramRoot": "./client",
 	"qcloudRoot": "./server",
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true
 	},
-	"appid": "wx472e8ad45bbfcb79",
-	"projectname": "GITHUB",
+	"appid": "wx72ab51acc6968709",
+	"projectname": "%E5%8D%8E%E7%94%B5%E7%9F%A5%E8%AF%86%E7%8E%8B%E8%80%85",
 	"libVersion": "1.4.4",
 	"condition": {
 		"search": {

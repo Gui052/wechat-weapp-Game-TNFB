@@ -3,9 +3,9 @@
  */
 
 // 此处主机域名修改成腾讯云解决方案分配的域名
-var host = '填写您的开发环境域名'  //开发环境
+var host = 'http://localhost:5757'  //开发环境
 
-var appId ='填写您申请的appId'
+var appId = 'wx72ab51acc6968709'
 
 var config = {
 
